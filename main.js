@@ -1,7 +1,10 @@
 //vue js framework
+const { createApp } = Vue
 
-import { createApp } from 'vue'
-
-const app = createApp({
-  /* root component options */
+createApp({
+  data() {
+    return {
+      message: 'hello world',
+    }
+  }
 }).mount('#app');
